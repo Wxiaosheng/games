@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  <title>getCookie</title>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <script>
+		function getCookie(cname){
+			var str=document.cookie;
+			var i=str.indexOf(cname);
+			if(i!=-1){
+				var starti=i+cname.length+1;
+				var endi=str.indexOf(";",i);
+				endi=(endi==-1)?str.length:endi;
+				return str.slice(starti,endi);
+			}else{
+				return undefined;
+			}
+		}
+	</script>
+ </body>
+</html>
