@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>flex </title>
+  <style>
+   body{
+    font-size:12px;
+	margin:0;
+	padding:0;
+   }
+   .main{
+    background-color:#aaa;
+	min-height:568px;
+	display:flex;
+	flex-direction:column;
+   }
+   .header,.footer{
+	flex:0 0 50px;
+	background-color:#ddd;
+   }
+   .header{
+	display:flex;
+   }
+	.backbtn,.nextbtn{
+		width:80px;
+	}
+	.home{
+		flex:1;
+	}
+	.header div{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+   .content{
+	flex:1;
+   }
+   .content{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+   }
+   .footer{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+   }
+  </style>
+ </head>
+ <body class="main">
+  <header class='header'>
+	<div class="backbtn"><span>返回</span></div>
+	<div class="home"><span>首页</span></div>
+	<div class="nextbtn"><span>下一步</span></div>
+  </header>
+  <section class="content"><span>这里是内容</span></section>
+  <footer class="footer"><span id='ok'>确定</span></footer>
+
+ </body>
+</html>
