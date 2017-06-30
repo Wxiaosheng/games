@@ -3,6 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="Generator" content="EditPlus®">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
@@ -57,9 +58,31 @@
 		background-color:#e4393c;
     }
 }
+
+	.box{
+		height:100px;
+		background-color:#fff;
+		display:flex;
+		align-items:space-around;
+		flex-wrap:wrap;
+	}
+	.cross{
+		display:flex;
+		flex-basis:1;
+	}
+	.cross div{
+		flex-basis:1;
+	}
+	.item{
+		width:300px;
+		display:flex;
+		jusity-content:center;
+		align-items:center;
+	}
   </style>
  </head>
  <body class="main">
+	<h1>圣杯布局</h1>
   <header class='header'>
 	<div class="backbtn"><span>返回</span></div>
 	<div class="home"><span>首页</span></div>
@@ -67,6 +90,19 @@
   </header>
   <section class="content"><span>这里是内容</span></section>
   <footer class="footer"><span id='ok'>确定</span></footer>
+
+
+	<h1>输入框布局</h1>
+	<div class="box">
+		<div class="cross">
+			<div class='item'><span>Amout</span><input /></div>
+			<div class='item'><input /><span>Go</span></div>
+		</div>
+		<div class="cross">
+			<div class='item'><span>放大</span><input /></div>
+			<div class='item'><input /><span>星</span></div>
+		</div>
+	</div>
 
  </body>
 </html>
